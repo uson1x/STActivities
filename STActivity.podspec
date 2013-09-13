@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary      = "A short description of STActivity."
 
   s.description  = <<-DESC
-                   STActivities consist of UIActivity subclasses for Twitter and Facebook sharing, which send users to Setting if they are not logged into their accounts. In iOS 7 and prior embedded Facebook and Twitter UIActivities don't show up in a list of activities if user is not logged in these account in iOS Settings. By replacing the embedded activities with these these two, you will make the Facebook and Twitter icons always show up in the list.
+                   STActivities consist of UIActivity subclasses for Twitter and Facebook sharing, which send users to Setting if they are not logged into their accounts.
                    DESC
 
   s.homepage     = "https://github.com/uson1x/STActivities"
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
  
-  s.source       = { :git => "https://github.com/gpinigin/STActivities", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/gpinigin/STActivities.git", :tag => "1.0.0" }
   s.source_files  = 'STActivity/**/*.{h,m}'
  
   s.resources = "STActivity/STActivity.bundle"
