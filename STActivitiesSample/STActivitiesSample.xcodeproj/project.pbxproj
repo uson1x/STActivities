@@ -21,12 +21,9 @@
 		7778568717E33E960072D44E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7778566917E33E960072D44E /* UIKit.framework */; };
 		7778568F17E33E960072D44E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7778568D17E33E960072D44E /* InfoPlist.strings */; };
 		7778569117E33E960072D44E /* STActivitiesSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7778569017E33E960072D44E /* STActivitiesSampleTests.m */; };
-		777856A317E33EBD0072D44E /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 7778569B17E33EBD0072D44E /* facebook.png */; };
-		777856A417E33EBD0072D44E /* facebook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7778569C17E33EBD0072D44E /* facebook@2x.png */; };
-		777856A517E33EBD0072D44E /* STFacebookActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7778569E17E33EBD0072D44E /* STFacebookActivity.m */; };
-		777856A617E33EBD0072D44E /* STTwitterActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 777856A017E33EBD0072D44E /* STTwitterActivity.m */; };
-		777856A717E33EBD0072D44E /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 777856A117E33EBD0072D44E /* twitter.png */; };
-		777856A817E33EBD0072D44E /* twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 777856A217E33EBD0072D44E /* twitter@2x.png */; };
+		777856B117E362380072D44E /* STActivity.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 777856AC17E362380072D44E /* STActivity.bundle */; };
+		777856B217E362380072D44E /* STFacebookActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 777856AE17E362380072D44E /* STFacebookActivity.m */; };
+		777856B317E362380072D44E /* STTwitterActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 777856B017E362380072D44E /* STTwitterActivity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,14 +56,11 @@
 		7778568C17E33E960072D44E /* STActivitiesSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "STActivitiesSampleTests-Info.plist"; sourceTree = "<group>"; };
 		7778568E17E33E960072D44E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7778569017E33E960072D44E /* STActivitiesSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STActivitiesSampleTests.m; sourceTree = "<group>"; };
-		7778569B17E33EBD0072D44E /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = ../facebook.png; sourceTree = "<group>"; };
-		7778569C17E33EBD0072D44E /* facebook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook@2x.png"; path = "../facebook@2x.png"; sourceTree = "<group>"; };
-		7778569D17E33EBD0072D44E /* STFacebookActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STFacebookActivity.h; path = ../STFacebookActivity.h; sourceTree = "<group>"; };
-		7778569E17E33EBD0072D44E /* STFacebookActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STFacebookActivity.m; path = ../STFacebookActivity.m; sourceTree = "<group>"; };
-		7778569F17E33EBD0072D44E /* STTwitterActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STTwitterActivity.h; path = ../STTwitterActivity.h; sourceTree = "<group>"; };
-		777856A017E33EBD0072D44E /* STTwitterActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STTwitterActivity.m; path = ../STTwitterActivity.m; sourceTree = "<group>"; };
-		777856A117E33EBD0072D44E /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = twitter.png; path = ../twitter.png; sourceTree = "<group>"; };
-		777856A217E33EBD0072D44E /* twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter@2x.png"; path = "../twitter@2x.png"; sourceTree = "<group>"; };
+		777856AC17E362380072D44E /* STActivity.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = STActivity.bundle; sourceTree = "<group>"; };
+		777856AD17E362380072D44E /* STFacebookActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFacebookActivity.h; sourceTree = "<group>"; };
+		777856AE17E362380072D44E /* STFacebookActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFacebookActivity.m; sourceTree = "<group>"; };
+		777856AF17E362380072D44E /* STTwitterActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTwitterActivity.h; sourceTree = "<group>"; };
+		777856B017E362380072D44E /* STTwitterActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STTwitterActivity.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +90,7 @@
 		7778565917E33E960072D44E = {
 			isa = PBXGroup;
 			children = (
-				7778569A17E33EB50072D44E /* STActivities */,
+				777856AB17E362380072D44E /* STActivity */,
 				7778566B17E33E960072D44E /* STActivitiesSample */,
 				7778568A17E33E960072D44E /* STActivitiesSampleTests */,
 				7778566417E33E960072D44E /* Frameworks */,
@@ -167,19 +161,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		7778569A17E33EB50072D44E /* STActivities */ = {
+		777856AB17E362380072D44E /* STActivity */ = {
 			isa = PBXGroup;
 			children = (
-				7778569B17E33EBD0072D44E /* facebook.png */,
-				7778569C17E33EBD0072D44E /* facebook@2x.png */,
-				7778569D17E33EBD0072D44E /* STFacebookActivity.h */,
-				7778569E17E33EBD0072D44E /* STFacebookActivity.m */,
-				7778569F17E33EBD0072D44E /* STTwitterActivity.h */,
-				777856A017E33EBD0072D44E /* STTwitterActivity.m */,
-				777856A117E33EBD0072D44E /* twitter.png */,
-				777856A217E33EBD0072D44E /* twitter@2x.png */,
+				777856AC17E362380072D44E /* STActivity.bundle */,
+				777856AD17E362380072D44E /* STFacebookActivity.h */,
+				777856AE17E362380072D44E /* STFacebookActivity.m */,
+				777856AF17E362380072D44E /* STTwitterActivity.h */,
+				777856B017E362380072D44E /* STTwitterActivity.m */,
 			);
-			name = STActivities;
+			name = STActivity;
+			path = ../STActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,13 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				777856A417E33EBD0072D44E /* facebook@2x.png in Resources */,
 				7778567E17E33E960072D44E /* Images.xcassets in Resources */,
-				777856A317E33EBD0072D44E /* facebook.png in Resources */,
-				777856A717E33EBD0072D44E /* twitter.png in Resources */,
+				777856B117E362380072D44E /* STActivity.bundle in Resources */,
 				7778567017E33E960072D44E /* InfoPlist.strings in Resources */,
 				7778567917E33E960072D44E /* Main.storyboard in Resources */,
-				777856A817E33EBD0072D44E /* twitter@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,10 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7778567C17E33E960072D44E /* ViewController.m in Sources */,
-				777856A517E33EBD0072D44E /* STFacebookActivity.m in Sources */,
+				777856B217E362380072D44E /* STFacebookActivity.m in Sources */,
 				7778567617E33E960072D44E /* AppDelegate.m in Sources */,
 				7778567217E33E960072D44E /* main.m in Sources */,
-				777856A617E33EBD0072D44E /* STTwitterActivity.m in Sources */,
+				777856B317E362380072D44E /* STTwitterActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +485,7 @@
 				7778569617E33E960072D44E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7778569717E33E960072D44E /* Build configuration list for PBXNativeTarget "STActivitiesSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +494,7 @@
 				7778569917E33E960072D44E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

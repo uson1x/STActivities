@@ -8,7 +8,7 @@ By replacing the embedded activities with these these two, you will make the Fac
 How to use
 ============
 
-1. Copy `STFacebookActivity.h`, `STFacebookActivity.m`, `STTwitterActivity.h`, `STTwitterActivity.m` and `facebook(@2x).png`/`twitter(@2x).png` images into your project
+1. Copy files from `STActivity` directory to your project
 2. Initialize `UIActivityViewController` using `@[[STFacebookActivity new], [STTwitterActivity new]]` as applicationActivities array
 3. Set `excludedActivityTypes` to `@[UIActivityTypePostToFacebook, UIActivityTypePostToTwitter]`
 4. Present created UIActivityViewController as usual
