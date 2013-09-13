@@ -27,10 +27,12 @@
     return self;
 }
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED > __IPHONE_6_1
 + (UIActivityCategory)activityCategory
 {
     return UIActivityCategoryShare;
 }
+#endif
 
 - (NSString *)activityType
 {
