@@ -1,21 +1,23 @@
 //
-//  STTwitterActivity.m
+//  STFacebookActivity.m
 //  STActivitiesSample
 //
 //  Created by Ivan Parfenchuk on 12.09.13.
 //  Copyright (c) 2013 Ivan Parfenchuk. All rights reserved.
 //
 
-#import "STTwitterActivity.h"
+#import "STFacebookActivity.h"
 #import <Social/Social.h>
 #import <Social/SLComposeViewController.h>
 
-@interface STTwitterActivity ()
+NSString *const UIActivityTypePostToFacebookCustom = @"UIActivityTypePostToFacebookCustom";
+
+@interface STFacebookActivity ()
 @property (strong, nonatomic) NSMutableArray * sharingImages;
 @property (strong, nonatomic) NSMutableString * sharingText;
 @end
 
-@implementation STTwitterActivity
+@implementation STFacebookActivity
 
 - (id)init
 {
@@ -27,44 +29,33 @@
     return self;
 }
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED > __IPHONE_6_1
 + (UIActivityCategory)activityCategory
 {
     return UIActivityCategoryShare;
 }
+#endif
 
 - (NSString *)activityType
 {
-    return @"UIActivityTypePostToTwitterCustom";
+    return UIActivityTypePostToFacebookCustom;
 }
 
 - (NSString *)activityTitle
 {
-    return @"Twitter";
+    return @"Facebook";
 }
 
 - (UIImage *)activityImage
 {
-    return [UIImage imageNamed:@"twitter.png"];
+    return [UIImage imageNamed:@"STActivity.bundle/facebook"];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems
 {
-    NSInteger countOfImages = 0;
     for (UIActivityItemProvider * item in activityItems)
     {
-        BOOL itemIsImage = NO;
-        BOOL itemIsString = NO;
-        if ([item isKindOfClass:[UIImage class]])
-        {
-            countOfImages += 1;
-            itemIsImage = YES;
-        }
-        else if ([item isKindOfClass:[NSString class]])
-        {
-            itemIsString = YES;
-        }
-
-        if ((!itemIsString && !itemIsImage) || countOfImages > 1)
+        if (![item isKindOfClass:[NSString class]] && ![item isKindOfClass:[UIImage class]])
         {
             return NO;
         }
@@ -89,17 +80,15 @@
 
 - (UIViewController *)activityViewController
 {
-    SLComposeViewController * vc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeTwitter];
+    SLComposeViewController * vc = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
     [vc setInitialText:self.sharingText];
-    for (UIImage * image in self.sharingImages)
-    {
+    for (UIImage * image in self.sharingImages) {
         [vc addImage:image];
     }
     [vc setCompletionHandler:^(SLComposeViewControllerResult result){
         [self activityDidFinish:result == SLComposeViewControllerResultDone];
-    }];
+     }];
     return vc;
 }
-
 
 @end
