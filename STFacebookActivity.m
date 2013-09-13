@@ -44,7 +44,7 @@
 
 - (UIImage *)activityImage
 {
-    return [UIImage imageNamed:@"facebook.png"];
+    return [UIImage imageNamed:@"STActivity.bundle/facebook"];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems

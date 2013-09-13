@@ -44,7 +44,7 @@
 
 - (UIImage *)activityImage
 {
-    return [UIImage imageNamed:@"twitter.png"];
+    return [UIImage imageNamed:@"STActivity.bundle/twitter"];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems
