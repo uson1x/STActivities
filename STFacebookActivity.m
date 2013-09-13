@@ -1,9 +1,9 @@
 //
 //  STFacebookActivity.m
-//  Stancity
+//  STActivitiesSample
 //
 //  Created by Ivan Parfenchuk on 12.09.13.
-//  Copyright (c) 2013 Stancity. All rights reserved.
+//  Copyright (c) 2013 Ivan Parfenchuk. All rights reserved.
 //
 
 #import "STFacebookActivity.h"
