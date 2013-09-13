@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+extern NSString *const UIActivityTypePostToFacebookCustom;
+
 @interface STFacebookActivity : UIActivity
 
 @end

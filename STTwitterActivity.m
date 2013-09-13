@@ -10,6 +10,8 @@
 #import <Social/Social.h>
 #import <Social/SLComposeViewController.h>
 
+NSString *const UIActivityTypePostToTwitterCustom = @"UIActivityTypePostToTwitterCustom";
+
 @interface STTwitterActivity ()
 @property (strong, nonatomic) NSMutableArray * sharingImages;
 @property (strong, nonatomic) NSMutableString * sharingText;
@@ -36,7 +38,7 @@
 
 - (NSString *)activityType
 {
-    return @"UIActivityTypePostToTwitterCustom";
+    return UIActivityTypePostToTwitterCustom;
 }
 
 - (NSString *)activityTitle
