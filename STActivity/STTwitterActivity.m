@@ -86,7 +86,7 @@ NSString *const UIActivityTypePostToTwitterCustom = @"UIActivityTypePostToTwitte
         }
         else if ([item isKindOfClass:[NSString class]])
         {
-            [self.sharingText appendString:self.sharingText.length ? item : [NSString stringWithFormat:@"\n%@", item]];
+            [self.sharingText appendString:self.sharingText.length ? item : [NSString stringWithFormat:@"%@\n", item]];
         }
     }
 }
