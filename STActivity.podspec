@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "STActivity"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Custom Twitter/Facebook activities"
 
   s.description  = <<-DESC
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
  
-  s.source       = { :git => "https://github.com/gpinigin/STActivities", :tag => "1.0.0" }
+  s.source       = { :git => "https://github.com/uson1x/STActivities.git", :tag => "1.0.1" }
   s.source_files  = 'STActivity/**/*.{h,m}'
  
   s.resources = "STActivity/STActivity.bundle"
