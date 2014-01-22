@@ -1,9 +1,9 @@
 STActivities
 ============
 
-STActivities consist of UIActivity subclasses for Twitter and Facebook sharing, which send users to Setting if they are not logged into their accounts.
-In iOS 7 and prior embedded Facebook and Twitter UIActivities don't show up in a list of activities if user is not logged in these account in iOS Settings.
-By replacing the embedded activities with these these two, you will make the Facebook and Twitter icons always show up in the list.
+STActivities consist of UIActivity subclasses for replacing the standard Twitter and Facebook UIActivities. 
+In iOS 7 and prior embedded Facebook and Twitter UIActivities don't show up in a list of activities if user is not logged into these accounts in iOS Settings.
+By replacing the embedded activities with these these two, you can make the icons always show up in the list.
 
 How to use
 ============
