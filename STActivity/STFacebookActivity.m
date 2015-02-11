@@ -48,7 +48,11 @@ NSString *const UIActivityTypePostToFacebookCustom = @"UIActivityTypePostToFaceb
 
 - (UIImage *)activityImage
 {
-    return [UIImage imageNamed:@"STActivity.bundle/facebook"];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        return [UIImage imageNamed:@"STActivity.bundle/facebook-ios8"];
+    } else {
+        return [UIImage imageNamed:@"STActivity.bundle/facebook"];
+    }
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "STActivity"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Custom Twitter/Facebook activities"
 
   s.description  = <<-DESC
@@ -9,13 +9,13 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/uson1x/STActivities"
   s.license      = <<-LICENSE
-		Copyright (c) 2013 Ivan Parfenchuk. All rights reserved.
+		Copyright (c) 2015 Ivan Parfenchuk. All rights reserved.
 		      LICENSE
   s.author       = 'Ivan Parfenchuk'
   s.platform     = :ios, '6.0'
   s.ios.deployment_target = '6.0'
  
-  s.source       = { :git => "https://github.com/uson1x/STActivities.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/uson1x/STActivities.git", :tag => "1.0.2" }
   s.source_files  = 'STActivity/**/*.{h,m}'
  
   s.resources = "STActivity/STActivity.bundle"

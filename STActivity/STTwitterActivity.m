@@ -48,7 +48,11 @@ NSString *const UIActivityTypePostToTwitterCustom = @"UIActivityTypePostToTwitte
 
 - (UIImage *)activityImage
 {
-    return [UIImage imageNamed:@"STActivity.bundle/twitter"];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) {
+        return [UIImage imageNamed:@"STActivity.bundle/twitter-ios8"];
+    } else {
+        return [UIImage imageNamed:@"STActivity.bundle/twitter"];
+    }
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems
